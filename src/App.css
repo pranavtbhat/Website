@@ -1,0 +1,38 @@
+.App {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.Main {
+    height: 100%;
+    width: 77.5%;
+    float: right;
+}
+
+.Navbar {
+    height: 100%;
+    width: 22.5%;
+    background-color: #222;
+    color: white;
+    float: left;
+}
+
+.Profile {
+    height: 35%;
+    position: relative;
+}
+
+.ProfilePic {
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Menu {
+    position: relative;
+    height: 45%;
+}
