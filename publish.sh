@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Get HEAD commit id
-HEAD_ID=$(git rev-parse HEAD)
+HEAD=$(git rev-parse HEAD)
 
 # Wipe out existing build directory
 rm -rf build/
@@ -18,7 +18,7 @@ cp -r build/* temp/
 # Go into directory, commit and push
 cd temp
 git add .
-git commit -m "Matching commit in website: $(HEAD_ID)"
+git commit -m "Matching commit in website: $HEAD"
 git push origin master
 
 # Step out and wipe out temp
